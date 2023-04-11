@@ -1,0 +1,102 @@
+
+package demo;
+import java.util.*;
+import java.io.*;
+
+public class apple {
+
+public static void main(String[] args) {
+
+	Scanner scanner= new Scanner(System.in);
+	
+ String name;
+	int p1 =325;
+	int p2 =360;
+	int p3 =476;
+	int p4 =564;
+	int p5=95;
+	int quan;
+	int choice;
+	double discount_price;
+	double net_sale;
+	
+	System.out.println("Hello welcome to the programm...Please enter your name: ");
+	name= scanner.next();
+	
+	
+	System.out.println("\n" + "Hello.." + name +"\n" +" "+"\n below five apple products with their prices listed and discount of 10%:  ");
+	System.out.println("\n1.Iphone 14..\t 325 omani rials\n2.Iphone 14 plus..\t 360 OMR\n3.Iphone 14 pro..\t 476 OMR \n4.Iphone 14 pro max..\t 564 OMR \n5.Airpods pro.\t 95 OMR  ");
+	System.out.print("\n\t Enter a choice please : " +"\n");
+	choice = scanner.nextInt();
+
+		
+	
+	System.out.println("\tEnter the quanity:  ");
+	quan= scanner.nextInt();
+	
+	switch(choice) {
+	
+	case 1:
+		discount_price= (  quan*p1/10% - (quan * p1));
+		net_sale= (quan * p1) - discount_price;
+		System.out.println("Customer Name: "+ " "  + name);
+		System.out.println("cost befor discount: " + p1+ " " + "OMR");
+		System.out.println("discont 10 %");
+		System.out.println("Cost after discount:     " + net_sale + " " + "OMR");
+		break;
+	case 2:
+		discount_price=  (  quan*p2/10% - (quan * p2));
+		net_sale= (quan * p2) - discount_price;
+		System.out.println("Customer Name: "+ " "  + name);
+		System.out.println("cost befor discount: " + p2+ " " + "OMR");
+		System.out.println("discont 10 %");
+		System.out.println("Cost after discount:     " + net_sale + " " + "OMR");
+		
+		break;
+	case 3:
+		discount_price= (  quan*p3/10% - (quan * p3));
+		net_sale= (quan * p3) - discount_price;
+		System.out.println("Customer Name: "+ " "  + name);
+		System.out.println("cost befor discount: " + p3+ " " + "OMR");
+		System.out.println("discont 10 %");
+		System.out.println("Cost after discount:     " + net_sale + " " + "OMR");
+			break;
+	case 4:
+		discount_price= (  quan*p4/10% - (quan * p4));
+		net_sale= (quan * p4) - discount_price;
+		System.out.println("Customer Name: " + " "  + name);
+		System.out.println("cost befor discount: " + p4+ " " + "OMR");
+		System.out.println("discont 10 %");
+		System.out.println("Cost after discount:     " + net_sale + " " + "OMR");
+			break;
+	case 5:
+		discount_price=  (  quan*p5/10% - (quan * p5));
+		net_sale= (quan * p5) - discount_price;
+		System.out.println("Customer Name: " + " "  + name);
+		System.out.println("cost befor discount: " + p5+ " " + "OMR");
+	System.out.println( "Cost after discount:     "  + net_sale +  " " + "OMR");
+		
+		break;
+		
+	default:
+		System.out.println("\n\t Wrong Input");
+	
+
+	
+	}
+	
+	
+         
+
+	
+
+	}
+
+}
+}
+	
+	
+	
+	
+	
+}
