@@ -1,0 +1,53 @@
+   ------- to start the domain
+
+1- asadmin start-domain
+
+
+ ---------- to list all configurational services in the domain
+
+2- asadmin list "*"
+
+
+----------- to search within the list exactly that has are http and listner
+
+
+3- asadmin list "*" | grep http | grep listener
+
+
+-------- 
+
+4- get server-config.network-config.network-listners.network-listener.http-listener-1.*
+
+
+------- specifiy where you want to make the change .
+
+
+5- set server.http-service.http-listener.http-listener-1.security-enabled = true
+
+
+------ to list the domains
+
+
+6- asadmin list-domains
+
+
+-----   to stop the list of domains asadmin
+
+7- asadmin stop-domain
+
+----- to list all intances as admin
+
+
+8- asadmin list-instances 
+
+
+
+
+
+
+
+
+
+
+
+
